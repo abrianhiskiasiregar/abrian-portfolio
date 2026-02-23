@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Abrian Hiskia Siregar — Portfolio Website
 
-## Getting Started
+Built with **Next.js 14**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+---
+
+## 🚀 Quick Start
 
 ```bash
+# 1. Install dependencies
+npm install
+
+# 2. Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 3. Open in browser
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── globals.css        ← Global styles + Tailwind
+│   ├── layout.tsx         ← Root layout (Google Fonts, metadata)
+│   └── page.tsx           ← Main page (assembles all sections)
+├── components/
+│   ├── Hero.tsx           ← Landing hero + navbar
+│   ├── About.tsx          ← About me section
+│   ├── Skills.tsx         ← Skills & tools (Figma, Canva, etc.)
+│   ├── Timeline.tsx       ← Work experience (DPRD internship)
+│   ├── Projects.tsx       ← Portfolio projects (ReCraft, DailyFocus, Poster)
+│   ├── Certificates.tsx   ← Awards & certifications
+│   └── Contact.tsx        ← Contact form + social links
+├── data/
+│   ├── projects.ts        ← Projects data
+│   ├── experiences.ts     ← Work experience data
+│   └── certificates.ts    ← Certificates data
+└── lib/
+    └── utils.ts           ← cn() utility function
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+public/
+└── images/                ← 📸 ADD YOUR IMAGES HERE
+    ├── profile.jpg                   ← Your profile photo (1:1 ratio)
+    ├── project-recraft.jpg           ← ReCraft UI screenshot
+    ├── project-dailyfocus.jpg        ← DailyFocus mobile screenshot
+    ├── project-poster.jpg            ← Competition poster
+    ├── cert-comftik.jpg              ← COMFTIK certificate
+    ├── cert-gdg.jpg                  ← GDG certificate
+    ├── cert-codefest.jpg             ← CodeFest certificate
+    └── cert-revou.jpg                ← RevoU certificate
+```
 
-## Learn More
+## 🖼️ Adding Your Images
 
-To learn more about Next.js, take a look at the following resources:
+1. **Profile photo** → `public/images/profile.jpg`
+   - Then uncomment the `<Image>` tag in `Hero.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Project screenshots** → `public/images/project-*.jpg`
+   - Update `Projects.tsx` to use `<Image>` instead of the SVG mockup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Certificate images** → `public/images/cert-*.jpg`
+   - Cards will display them automatically when files exist
 
-## Deploy on Vercel
+## 🎨 Design System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Color | Usage |
+|-------|-------|
+| `#F97316` | Orange — primary brand accent |
+| `#0F0F0F` | Near-black — main background |
+| `#161616` | Dark gray — card backgrounds |
+| `#FB923C` | Light orange — hover states |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Fonts:**
+- **Syne** — Display headings (bold, editorial)
+- **Plus Jakarta Sans** — Body text (clean, readable)
+- **JetBrains Mono** — Labels & code snippets
+
+## 📦 Key Dependencies
+
+```json
+{
+  "next": "14.2.0",
+  "react": "^18",
+  "tailwindcss": "^3.3.0",
+  "lucide-react": "^0.263.1",
+  "clsx": "^2.0.0",
+  "tailwind-merge": "^2.0.0"
+}
+```
+
+## 🌐 Deploy
+
+```bash
+# Build for production
+npm run build
+
+# Deploy to Vercel (recommended)
+npx vercel
+```
+
+---
+
+Made with ❤️ by **Abrian Hiskia Siregar** — Informatics Student, UI/UX & Graphic Design Enthusiast
