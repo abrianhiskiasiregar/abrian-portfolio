@@ -86,7 +86,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex items-center gap-4 mb-6">
           <span className="font-mono text-orange-400 text-sm tracking-widest">
-            07.
+            09.
           </span>
           <h2 className="font-display font-bold text-4xl text-white">
             Let's Connect

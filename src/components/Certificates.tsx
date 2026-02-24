@@ -9,7 +9,7 @@ export default function Certificates() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center gap-4 mb-6">
           <span className="font-mono text-orange-400 text-sm tracking-widest">
-            06.
+            08.
           </span>
           <h2 className="font-display font-bold text-4xl text-white">
             Licenses & Certifications

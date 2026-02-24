@@ -40,8 +40,10 @@ export default function Hero() {
               "home",
               "about",
               "skills",
-              "experience",
               "projects",
+              "experience",
+              "organizations",
+              "workshops",
               "certificates",
               "contact",
             ].map((s) => (

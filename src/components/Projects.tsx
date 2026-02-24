@@ -108,7 +108,7 @@ export default function Projects() {
         {/* Header */}
         <div className="flex items-center gap-4 mb-6">
           <span className="font-mono text-orange-400 text-sm tracking-widest">
-            05.
+            04.
           </span>
           <h2 className="font-display font-bold text-4xl text-white">
             My Projects

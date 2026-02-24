@@ -8,7 +8,7 @@ export default function Timeline() {
     <section id="experience" className="py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center gap-4 mb-16">
-          <span className="font-mono text-orange-400 text-sm tracking-widest">04.</span>
+          <span className="font-mono text-orange-400 text-sm tracking-widest">05.</span>
           <h2 className="font-display font-bold text-4xl text-white">Work Experience</h2>
           <div className="flex-1 h-px bg-gradient-to-r from-orange-500/30 to-transparent" />
         </div>
