@@ -22,23 +22,27 @@ http://localhost:3000
 ```
 src/
 ├── app/
-│   ├── globals.css        ← Global styles + Tailwind
-│   ├── layout.tsx         ← Root layout (Google Fonts, metadata)
-│   └── page.tsx           ← Main page (assembles all sections)
+│   ├── globals.css          # Global styles & Tailwind configuration
+│   ├── layout.tsx           # Root layout (Fonts, Metadata, SEO setup)
+│   └── page.tsx             # Main page (Render all sections)
+│
 ├── components/
-│   ├── Hero.tsx           ← Landing hero + navbar
-│   ├── About.tsx          ← About me section
-│   ├── Skills.tsx         ← Skills & tools (Figma, Canva, etc.)
-│   ├── Timeline.tsx       ← Work experience (DPRD internship)
-│   ├── Projects.tsx       ← Portfolio projects (ReCraft, DailyFocus, Poster)
-│   ├── Certificates.tsx   ← Awards & certifications
-│   └── Contact.tsx        ← Contact form + social links
+│   ├── Hero.tsx             # Landing section & navigation
+│   ├── About.tsx            # About me section
+│   ├── Skills.tsx           # Skills & tools showcase
+│   ├── Projects.tsx         # Featured projects
+│   ├── Timeline.tsx         # Work & internship experiences
+│   ├── Organizations.tsx    # Organizational experiences
+│   ├── WorkshopGallery.tsx  # Workshops & activities gallery
+│   ├── Certificates.tsx     # Certifications & achievements
+│   └── Contact.tsx          # Contact form & social media links
+│
 ├── data/
-│   ├── projects.ts        ← Projects data
-│   ├── experiences.ts     ← Work experience data
-│   └── certificates.ts    ← Certificates data
-└── lib/
-    └── utils.ts           ← cn() utility function
+    ├── projects.ts          # Projects data
+    ├── experiences.ts       # Work experience data
+    ├── organizations.ts     # Organization data
+    ├── workshops.ts         # Workshop data
+    └── certificates.ts      # Certificate data
 
 public/
 └── images/                ← 📸 ADD YOUR IMAGES HERE
@@ -62,6 +66,11 @@ public/
 
 3. **Certificate images** → `public/images/cert-*.jpg`
    - Cards will display them automatically when files exist
+
+4. **Organization images** → `public/images/name*.jpg`
+   
+5. **Workshops images** → `public/images/workshop1*.jpg`
+   
 
 ## 🎨 Design System
 
