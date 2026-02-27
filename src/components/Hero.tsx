@@ -8,7 +8,11 @@ export default function Hero() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  const roles = ["UI/UX Designer", "Graphic Designer", "Informatics Student"];
+  const roles = [
+    "Tech Builder & Problem Solver",
+    "UI/UX Engineer",
+    "Community-Driven Developer",
+  ];
   const [roleIdx, setRoleIdx] = useState(0);
 
   useEffect(() => {
@@ -113,10 +117,15 @@ export default function Hero() {
               </p>
             </div>
 
-            <p className="text-white/55 text-lg leading-relaxed mb-8 max-w-lg">
-              Informatics Student passionate about UI/UX, Graphic Design & tech.{" "}
-              <span className="text-white/80">Award winner</span> active in
-              campus organizations and self-development.
+            <p className="text-white/55 text-lg leading-relaxed mb-8 max-w-xl">
+              I design and build impactful digital experiences that solve real
+              problems. Passionate about technology, product thinking, and
+              community growth. Actively contributing through projects,
+              leadership, and continuous learning.
+            </p>
+            <p className="text-orange-400 text-sm font-medium mb-8">
+              • Building solutions • Empowering communities • Growing with
+              technology
             </p>
 
             {/* Stats row */}
@@ -158,52 +167,47 @@ export default function Hero() {
 
           {/* Right – Profile Card */}
           <div
-            className={`flex justify-center lg:justify-end transition-all duration-700 delay-200 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            className={`flex justify-center lg:justify-end transition-all duration-700 delay-200 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
           >
-            <div className="relative">
-              {/* Glow ring */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-orange-500/20 to-amber-400/10 blur-2xl scale-110" />
+            <div className="relative w-full max-w-sm">
+              {/* Glow */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-orange-500/20 to-amber-400/10 blur-2xl scale-105" />
 
-              <div className="relative bg-[#161616] border border-white/8 rounded-3xl p-8 w-[340px]">
-                {/* Avatar placeholder */}
-                <div className="relative w-full aspect-square rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-orange-500/20 to-amber-400/10">
-                  {/* Placeholder when no image */}
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-28 h-28 rounded-full bg-gradient-to-br from-orange-500 to-amber-400 mx-auto mb-4 flex items-center justify-center text-5xl font-display font-bold text-white shadow-2xl">
-                        A
-                      </div>
-                      <p className="text-white/30 text-xs">Place photo here</p>
-                      <p className="text-white/20 text-xs">
-                        public/images/profile.jpg
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Uncomment when you add your photo: */}
+              <div className="relative bg-[#161616] border border-white/10 rounded-3xl p-7">
+                {/* Avatar */}
+                <div className="relative w-full aspect-square rounded-2xl overflow-hidden mb-6 ring-1 ring-white/10">
                   <Image
                     src="/images/profile.jpeg"
                     alt="Abrian Hiskia Siregar"
                     fill
-                    className="object-cover"
+                    priority
+                    className="object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
 
+                {/* Info */}
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <h3 className="font-display font-bold text-xl text-white">
+                    <h3 className="font-bold text-xl text-white">
                       Abrian Hiskia Siregar
                     </h3>
-                    <BadgeCheck className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                    <BadgeCheck className="w-5 h-5 text-blue-400" />
                   </div>
+
                   <p className="text-orange-400 text-sm font-medium">
-                    UI/UX & Graphic Designer
+                    • Tech Builder • UI/UX Engineer • Design Enthusiast
                   </p>
-                  <p className="text-white/50 text-sm leading-relaxed">
-                    Informatics Student | UI/UX & Graphic Design Enthusiast |
-                    Award Winner
+
+                  <p className="text-white/55 text-sm leading-relaxed">
+                    Informatics student focused on building meaningful digital
+                    products, solving real-world problems, and contributing to
+                    tech communities through leadership and collaboration.
                   </p>
-                  <div className="flex items-center gap-1 pt-1">
+
+                  {/* Rating */}
+                  <div className="flex items-center gap-1 pt-2">
                     {[1, 2, 3, 4, 5].map((i) => (
                       <Star
                         key={i}
@@ -211,30 +215,33 @@ export default function Hero() {
                       />
                     ))}
                     <span className="text-white/40 text-xs ml-2">
-                      Top Designer
+                      Community Contributor
                     </span>
                   </div>
                 </div>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mt-5">
-                  {["UI/UX", "Graphic Design", "Figma", "Award Winner"].map(
-                    (t) => (
-                      <span
-                        key={t}
-                        className="bg-white/5 border border-white/8 text-white/60 text-xs px-3 py-1 rounded-full"
-                      >
-                        {t}
-                      </span>
-                    ),
-                  )}
+                <div className="flex flex-wrap gap-2 mt-6">
+                  {[
+                    "Problem Solver",
+                    "Product Thinking",
+                    "UI/UX Design",
+                    "Community Driven",
+                  ].map((t) => (
+                    <span
+                      key={t}
+                      className="bg-white/5 border border-white/10 text-white/60 text-xs px-3 py-1 rounded-full"
+                    >
+                      {t}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              {/* Floating badge */}
-              <div className="absolute -bottom-4 -left-6 bg-orange-500 rounded-2xl px-5 py-3 shadow-xl shadow-orange-500/30">
-                <p className="text-white font-bold text-sm">2nd Place 🏆</p>
-                <p className="text-white/70 text-xs">COMFTIK Nasional 2025</p>
+              {/* Floating Achievement Badge */}
+              <div className="absolute -bottom-10 -left-5 bg-orange-500 rounded-2xl px-3 py-3 shadow-xl shadow-orange-500/30">
+                <p className="text-white font-semibold text-sm">2nd Place 🏆</p>
+                <p className="text-white/80 text-xs">COMFTIK Nasional 2025</p>
               </div>
             </div>
           </div>

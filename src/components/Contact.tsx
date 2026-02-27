@@ -68,7 +68,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+    const subject = encodeURIComponent(`Collaboration Opportunity – ${name}`);
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${message}`,
     );
@@ -89,7 +89,7 @@ export default function Contact() {
             09.
           </span>
           <h2 className="font-display font-bold text-4xl text-white">
-            Let's Connect
+            Let’s Build Something Impactful
           </h2>
           <div className="flex-1 h-px bg-gradient-to-r from-orange-500/30 to-transparent" />
         </div>
@@ -97,13 +97,15 @@ export default function Contact() {
         {/* Hero text */}
         <div className="text-center mb-20">
           <h3 className="font-display font-bold text-4xl lg:text-6xl text-white leading-tight mb-6">
-            Have an Awesome
+            Let’s Create
             <br />
-            <span className="gradient-text">Project Idea?</span>
+            <span className="gradient-text">Meaningful Impact</span>
           </h3>
+
           <p className="text-white/50 text-lg max-w-xl mx-auto">
-            Whether it's a design project, collaboration, internship, or just a
-            conversation — my inbox is always open.
+            I’m open to internships, design collaborations, and
+            technology-driven initiatives. If you have an opportunity or idea in
+            mind, let’s make it happen.
           </p>
         </div>
 
@@ -147,10 +149,10 @@ export default function Contact() {
               <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
               <div>
                 <p className="text-green-400 font-semibold text-sm">
-                  Available for Work
+                  Currently Available
                 </p>
                 <p className="text-white/40 text-xs mt-0.5">
-                  Open to internships, freelance & full-time design roles
+                  Open to internship, freelance, and collaborative tech projects
                 </p>
               </div>
             </div>
@@ -205,7 +207,8 @@ export default function Contact() {
               </div>
               <a
                 href={`mailto:abrianhiskiasiregar@gmail.com?subject=Portfolio%20Inquiry&body=${encodeURIComponent(message)}`}
-                className="w-full bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-orange-500/30 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                className="w-full bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-orange-500/30 hover:-translate-y-0.5 flex items-center justify-center gap-2"
+              >
                 <Send className="w-4 h-4" />
                 Send Message
               </a>

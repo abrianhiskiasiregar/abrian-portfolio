@@ -11,7 +11,7 @@ export default function Organizations() {
             06.
           </span>
           <h2 className="font-display font-bold text-4xl text-white">
-            Organizations
+            Community & Organizations
           </h2>
           <div className="flex-1 h-px bg-gradient-to-r from-orange-500/30 to-transparent" />
         </div>

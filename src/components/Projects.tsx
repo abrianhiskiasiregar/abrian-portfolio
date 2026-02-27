@@ -24,12 +24,11 @@ const typeColors = {
 };
 
 /* ===================== */
-/* WEB MOCKUP (REAL IMAGE) */
+/* WEB MOCKUP */
 /* ===================== */
 function WebMockup({ image }: { image: string }) {
   return (
     <div className="w-full aspect-[16/10] rounded-xl overflow-hidden border border-white/10 relative bg-black/20">
-      {/* Browser chrome */}
       <div className="bg-black/40 px-3 py-2 flex items-center gap-2 border-b border-white/10">
         <div className="flex gap-1.5">
           <span className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
@@ -54,7 +53,7 @@ function WebMockup({ image }: { image: string }) {
 }
 
 /* ===================== */
-/* MOBILE MOCKUP (REAL IMAGE) */
+/* MOBILE MOCKUP */
 /* ===================== */
 function MobileMockup({ image }: { image: string }) {
   return (
@@ -63,7 +62,6 @@ function MobileMockup({ image }: { image: string }) {
         className="rounded-[2rem] border-4 border-white/20 overflow-hidden relative bg-black/20"
         style={{ aspectRatio: "9/19" }}
       >
-        {/* Status bar */}
         <div className="bg-black/30 h-8 flex items-center justify-center">
           <div className="w-16 h-3 bg-black/50 rounded-full" />
         </div>
@@ -82,7 +80,7 @@ function MobileMockup({ image }: { image: string }) {
 }
 
 /* ===================== */
-/* POSTER MOCKUP (REAL IMAGE) */
+/* POSTER MOCKUP */
 /* ===================== */
 function PosterMockup({ image }: { image: string }) {
   return (
@@ -111,14 +109,15 @@ export default function Projects() {
             04.
           </span>
           <h2 className="font-display font-bold text-4xl text-white">
-            My Projects
+            Selected Projects
           </h2>
           <div className="flex-1 h-px bg-gradient-to-r from-orange-500/30 to-transparent" />
         </div>
 
         <p className="text-white/50 mb-10 text-lg max-w-2xl">
-          A selection of UI/UX and design work — from web platforms to mobile
-          apps and award-winning competition posters.
+          A curated collection of digital products and visual systems built to
+          solve real user problems — combining research, structured thinking,
+          and measurable impact across web, mobile, and visual design.
         </p>
 
         {/* Filter */}
@@ -184,6 +183,7 @@ export default function Projects() {
                 <p className="text-white/40 text-sm mb-3 font-medium">
                   {project.subtitle}
                 </p>
+
                 <p className="text-white/55 text-sm leading-relaxed mb-5">
                   {project.description}
                 </p>
@@ -205,7 +205,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-orange-400 text-sm font-medium hover:gap-3 transition-all"
                 >
-                  <span>View Details</span>
+                  <span>Explore Case Study</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
               </div>

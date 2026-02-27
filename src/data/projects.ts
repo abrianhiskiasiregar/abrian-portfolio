@@ -16,9 +16,9 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "ReCraft",
-    subtitle: "Marketplace for Recycled Products",
+    subtitle: "Sustainable Marketplace Platform",
     description:
-      "A web-based UI/UX design for a marketplace platform that connects sellers of creative recycled products with conscious buyers. Features clean product listings, seller profiles, and an eco-impact tracker to encourage sustainable purchasing behavior.",
+      "ReCraft is a web-based marketplace concept designed to bridge eco-conscious buyers with creators of recycled and upcycled products. The problem addressed was the lack of visibility and trust in sustainable micro-businesses. I designed a clean product discovery flow, structured seller profiles, and an eco-impact tracker that visualizes environmental contribution per purchase. The platform encourages responsible consumption while improving user trust and engagement through transparency-focused design.",
     type: "UI/UX Web",
     tags: ["Figma", "Web Design", "Marketplace", "Sustainability"],
     image: "/images/project-recraft.png",
@@ -29,9 +29,9 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "DailyFocus",
-    subtitle: "Daily Focus Target App for Students",
+    subtitle: "Student Productivity & Focus App",
     description:
-      "A mobile UI/UX design for a focus and productivity tracker tailored for students. Features a Pomodoro-style timer, daily goal setting, streak tracking, and progress analytics — designed with a clean, distraction-free interface.",
+      "DailyFocus is a mobile productivity application designed to help students manage distractions and build consistent study habits. The core issue addressed was low task completion and lack of structured focus routines. The solution integrates a Pomodoro-based timer, goal tracking, streak visualization, and performance analytics within a minimal, distraction-free interface. The design emphasizes clarity, motivation loops, and habit reinforcement to support long-term productivity growth.",
     type: "UI/UX Mobile",
     tags: ["Figma", "Mobile Design", "Productivity", "Students"],
     image: "/images/project-dailyfocus.png",
@@ -42,9 +42,9 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Poster Digital COMFTIK",
-    subtitle: "2nd Place – National Graphic Design Competition",
+    subtitle: "2nd Place – National Design Competition",
     description:
-      "A competition poster design created for COMFTIK Nasional 2025. Crafted with strong visual hierarchy, bold typography, and a compelling social campaign message — earning 2nd Place in the national graphic design competition.",
+      "A nationally recognized poster created for COMFTIK Nasional 2025, addressing a social campaign theme through strong visual storytelling and persuasive hierarchy. The challenge was to communicate urgency and awareness within a single impactful frame. By combining bold typography, strategic color contrast, and structured composition, the design successfully delivered clarity and emotional engagement — earning 2nd Place at the national level.",
     type: "Graphic Design",
     tags: ["Canva", "Visual Design", "Competition", "Social Campaign"],
     image: "/images/project-poster.png",
